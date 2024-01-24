@@ -1,0 +1,160 @@
+.body{
+    background: black ;
+    color: white ;
+}
+.mama{
+    padding: 5px 0px 5px 5px;
+}
+@media(max-width:1000px){
+    .mama{
+        width: 60px;
+    }
+}
+@media(min-width:900px){
+    .mama{
+        width: 70px;
+    }
+}
+@media(min-width:850px){
+    .topboy{
+        display: none;
+    }
+}
+@media(max-width:850px){
+    .topboy2{
+        display: none;
+    }
+}
+.nav1{
+    position: relative;
+    top: 7px;
+    float: right;
+    cursor: pointer;
+}
+.topboy{
+   
+}
+.mynav{
+    display: none;
+}
+.design{
+    background-color: black;
+    width: 50%;
+    position: absolute;
+    z-index: 1999;
+    top: 0;
+    bottom: 0;
+    left: 0;
+}
+.design2{
+    float: right;
+}
+.bigboss{
+    margin: 20px 0px 20px 40px;
+}
+.logonav{
+    margin: 25px 0px 10px 40px;
+}
+
+.btnnav2{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 25px;
+    height: 25px;
+    border-radius: 0px 0px 0px 40px;
+    background-color: rgb(192, 5, 192);
+     border: 1px solid rgb(192, 5, 192);
+}
+.orign{
+    color: rgb(192, 5, 192) ;
+    font-family:   'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+.home{
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    font-family: Graphik, sans-serif;
+}
+.home2{
+    text-decoration: none;
+    font-size: 20px;
+    padding: 0px 0px 0px 13px;
+    font-weight: 500;
+    position: relative;
+    top: 20px;
+    color: white;
+    font-family: Graphik, sans-serif;
+}
+.color{
+    color: white;
+    display: inline;
+}
+.remove{
+    display: none;
+}
+.night{
+    display: none;
+}
+.father{
+    float: right;
+    position: relative;
+    top: 20px;
+    left: 30px;
+}
+.clothes{
+    width: 75%;
+    border-radius: 50%;
+}
+.mainpic{
+    text-align: center;
+    margin: 90px 0px 0px 0px;
+}
+.Hello{
+    font-size: 2rem;
+    font-weight: 500;
+}
+.stylist{
+    color: rgb(192, 5, 192);
+}
+.Welcome{
+    font-size: 1.8rem;
+}
+.pad{
+    padding-top: 120px;
+}
+@media(max-width:1000px){
+    .pad{
+        padding-top: 50px;
+    }
+}
+.pleasure{
+    font-family: 'Graphik, sans-serif,Space Grotesk', sans-serif !important;
+}
+.contact{
+    border: none;
+    margin-left: 6px;
+    padding: 5px 15px 5px 15px;
+    border-radius: 20px;
+    font-size: 1.2rem;
+    color: white;
+    background-color:rgb(192, 5, 192) ;
+}
+.contact:hover{
+    background-color: transparent;
+    color: rgb(192, 5, 192);
+    border:rgb(192, 5, 192) 1px solid ;
+    transition: 1s;
+}
+
+.love{
+    width: 30px;
+    position: relative;
+    bottom: 3px;
+}
+.fireworks{
+    width: 20%;
+}
+.center{
+    text-align: center;
+}
