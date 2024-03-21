@@ -31,21 +31,28 @@
     float: right;
     cursor: pointer;
 }
-.topboy{
-   
+.dope{
+    border-bottom: 1px solid rgb(54, 54, 54);
+    position: fixed;
+    width: 100%;
+    z-index:1999;
+    background: black;
 }
+
+
 .mynav{
     display: none;
 }
 .design{
-    background-color: black;
     width: 50%;
-    position: absolute;
+    position: fixed;
     z-index: 1999;
+    background-color: black;
+    z-index: 2000;
     top: 0;
     bottom: 0;
-    left: 0;
 }
+
 .design2{
     float: right;
 }
@@ -55,7 +62,6 @@
 .logonav{
     margin: 25px 0px 10px 40px;
 }
-
 .btnnav2{
     position: absolute;
     top: 0;
@@ -103,7 +109,7 @@
     left: 30px;
 }
 .clothes{
-    width: 75%;
+    width: 80%;
     border-radius: 50%;
 }
 .mainpic{
@@ -130,6 +136,8 @@
 }
 .pleasure{
     font-family: 'Graphik, sans-serif,Space Grotesk', sans-serif !important;
+    font-size: 1.05rem;
+   
 }
 .contact{
     border: none;
@@ -157,4 +165,152 @@
 }
 .center{
     text-align: center;
+}
+.house{
+    position: relative;
+    bottom: 2px;
+    right: 10px;
+    color: rgb(192, 5, 192);
+}
+.content2{
+    padding-top: 80px;
+}
+.stylisha{
+    display: flex;
+    flex-direction: column;
+    color: rgb(192, 5, 192);
+}
+.benefit{
+    height: 3em;
+    overflow: hidden;
+}
+.benefit span {
+    animation: auto-scroll 15s infinite;
+    font-size: 2em;
+    font-weight: 500;
+}
+@keyframes auto-scroll {
+    0%{
+        transform: translateY(0);
+    }
+    5%{
+        transform: translateY(0);
+    }
+    10%{
+        transform: translateY(-1.5em);
+    }
+    25%{
+        transform: translateY(-1.5em);
+    }
+    30%{
+        transform: translateY(-3em);
+    }
+    45%{
+        transform: translateY(-3em);
+    }
+    50%{
+        transform: translateY(-4.5em);
+    }
+    55%{
+        transform: translateY(-4.5em);
+    }
+    60%{
+        transform: translateY(-6em);
+    }
+    65%{
+        transform: translateY(-6em);
+    }
+    70%{
+        transform: translateY(-7.5em);
+    }
+    75%{
+        transform: translateY(-7.5em);
+    }
+    80%{
+        transform: translateY(-9em);
+    }
+    85%{
+        transform: translateY(-9em);
+    }
+
+    100%{
+        transform: translateY(-10.5em);
+    }
+}
+#internet1{
+    color: rgb(255, 0, 0);
+    font-size: 1rem;
+    background-color: rgb(20, 20, 20);
+   
+    padding: 2px 5px 2px 5px;
+    position: fixed;
+    z-index: 30;
+}
+.center2{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.flower{
+    width: 70%;
+    border-radius: 10px;
+}
+@media(min-width:900px){
+    .con-flower{
+        text-align: right;
+    }
+}
+@media(max-width:900px){
+    .con-flower{
+        text-align: center;
+    }
+}
+@media(max-width:900px){
+    .con-flower2{
+        text-align: center;
+    }
+}
+.about-us{
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: rgb(192, 5, 192);
+}
+@media(min-width:900px){
+    .about-container{
+        margin-top: 180px;
+    }
+}
+.us{
+    color:rgb(192, 5, 192) ;
+    font-size: 1.9rem;
+    font-weight: 600;
+}
+.width{
+    width: 150px;
+    margin-top: 35px; 
+}
+.Service-box{
+    border: 1px solid rgb(54, 54, 54);
+    border-radius: 25px;
+   
+}
+.peach{
+    background-color: rgb(192, 5, 192);
+    border-radius: 0px 0px 25px 25px;
+    padding: 5px 0px 5px 30px;
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+.line{
+    border-left:1px solid rgb(54, 54, 54) ;
+    position: relative;
+    right: 10px;
+}
+.margin-pleasure{
+    margin-top: 20px; 
+    margin-bottom: 5px;
+     height: 180px;
+    white-space: wrap;
+       text-overflow: ellipsis;
+    overflow: hidden;
 }

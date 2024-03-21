@@ -1,3 +1,11 @@
+let internet1= document.getElementById('internet1')
+if (window.navigator.onLine === true){
+  internet1.innerHTML='';
+}
+else{
+  internet1.innerHTML="Please connect to the internet your are offline";
+}
+
 let burger =document.querySelector('.burger')
 let remove=document.querySelector('.remove')
 let mynav=document.querySelector('.mynav')
@@ -23,11 +31,14 @@ let color3 =document.querySelector('.color3')
 let color4 =document.querySelector('.color4')
 let color5 =document.querySelector('.color5')
 let pleasure =document.querySelector('.pleasure')
+let dope =document.querySelector('.dope')
 day.addEventListener('click',shine)
 function shine(e){
   e.preventDefault();
   day.style.display='none';
   night.style.display='block';
+  dope.style.background='white';
+  dope.style.border='none';
   body.style.background='white';
   body.style.color='black';
   color1.style.color ='black';
@@ -42,6 +53,8 @@ function dim(e){
   e.preventDefault();
   night.style.display='none';
   day.style.display='block';
+  dope.style.background='black';
+  dope.style.border=' 1px solid rgb(24, 34, 24)';
   body.style.background='black';
   body.style.color='white';
   color1.style.color ='white';
@@ -51,14 +64,13 @@ function dim(e){
   color5.style.color ='white';
   pleasure.style.color='white';
   onions.style.background='white';
-  active.style.background='white'
-} 
+  active.style.background='white';
 
+} 
 var typed = new Typed('.autotyped', {
-    strings: ["OrignbyMama"],
-    typeSpeed: 50,
-    backSpeed: 0,
-    fadeOut: true,
-    loop: true
-  });
- 
+  strings: ["OrignbyMama"],
+  typeSpeed: 50,
+  backSpeed: 0,
+  fadeOut: true,
+  loop: true
+});
