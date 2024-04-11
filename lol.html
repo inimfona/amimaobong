@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+            overflow: hidden;
+        }
+        .header{
+            display: flex;
+            justify-content: space-between;
+            height: 100px;
+            background-color: red;
+            color: white;
+            font-size: 30px;
+            padding-top: 10px;
+        }
+        .footer{
+            background-color: blue;
+            height: 100px;
+            
+        }
+        .content{
+            display: flex;
+            justify-content: space-between;
+
+        }
+        .reverse{
+           
+        }
+        .slideleft , .slideright{
+            background-color: green;
+            height: 50vh;
+            width: 50px;
+           
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="link">link 1</div>
+        <div class="link">link 2</div>
+        <div class="link">link 3</div>
+    </div>
+    <div class="content">
+        <div class="slideright"></div>
+       <div class="">
+            <button class="reverse">Reverse</button>
+       </div>
+        <div class="slideleft"></div>
+    </div>
+    <div class="footer"></div>
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12/dist/gsap.min.js"></script>
+    <script>
+       
+        gsap.from('.link',{duration:1,opacity:0,delay:0.5, stagger:.5})
+        gsap.from('.slideleft',{duration:1,x:'-100vw',ease:'power2.in'})
+        gsap.from('.slideright',{duration:1,x:'-100%',delay:1,ease:'bounce'})
+        gsap.from('.footer',{duration:1,x:'-100%',delay:1,ease:'elastic'})
+        gsap.fromTo('.reverse',{opacity:0,scale:0,rotation:720},{duration:1,opacity:1,scale:1,rotation:0, x:'-100%',delay:1,ease:'elastic'})
+        const timeline=gsap.timeline()
+        timeline.from('.header',{duration:1,y:'-100%',ease:'bounce'})
+    </script>
+</body>
+</html>

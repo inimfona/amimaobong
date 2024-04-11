@@ -31,6 +31,9 @@
     float: right;
     cursor: pointer;
 }
+.home{
+    padding-right: 50px;
+}
 .dope{
     border-bottom: 1px solid rgb(54, 54, 54);
     position: fixed;
@@ -38,21 +41,22 @@
     z-index:1999;
     background: black;
 }
-
-
+.dope2{
+    box-shadow: -8px -8px 15px rgba(255, 255, 255, 0), 5px 5px 10px rgba(199, 199, 199, 0.418);
+}
 .mynav{
     display: none;
+   
 }
-.design{
-    width: 50%;
+.both2{
+   background-color: black;
     position: fixed;
     z-index: 1999;
-    background-color: black;
     z-index: 2000;
     top: 0;
     bottom: 0;
+   
 }
-
 .design2{
     float: right;
 }
@@ -79,18 +83,28 @@
 .home{
     text-decoration: none;
     font-size: 20px;
-    color: white;
     font-family: Graphik, sans-serif;
 }
 .home2{
     text-decoration: none;
     font-size: 20px;
-    padding: 0px 0px 0px 13px;
+    margin: 0px 0px 0px 15px;
     font-weight: 500;
     position: relative;
     top: 20px;
     color: white;
     font-family: Graphik, sans-serif;
+}
+.home2::before{
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    height: 2px;
+    width: 0;
+    background-color:rgb(192, 5, 192);
+    transition: 0.5s linear;
+}.home2:hover::before{
+    width: 100%;
 }
 .color{
     color: white;
@@ -102,11 +116,23 @@
 .night{
     display: none;
 }
+.night2{
+    display: none;
+}
 .father{
     float: right;
     position: relative;
     top: 20px;
     left: 30px;
+    cursor: pointer;
+}
+.father2{
+   
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    padding: 0px 15px 15px 0px;
+    cursor: pointer;
 }
 .clothes{
     width: 80%;
@@ -237,11 +263,10 @@
         transform: translateY(-10.5em);
     }
 }
-#internet1{
+.inter{
     color: rgb(255, 0, 0);
     font-size: 1rem;
     background-color: rgb(20, 20, 20);
-   
     padding: 2px 5px 2px 5px;
     position: fixed;
     z-index: 30;
@@ -286,13 +311,12 @@
     font-weight: 600;
 }
 .width{
-    width: 150px;
+    width: 130px;
     margin-top: 35px; 
 }
 .Service-box{
     border: 1px solid rgb(54, 54, 54);
     border-radius: 25px;
-   
 }
 .peach{
     background-color: rgb(192, 5, 192);
@@ -302,25 +326,32 @@
     font-weight: 600;
     color: white;
 }
-.line{
+.line ,.line1,.line20,.line3,.line4,.line5{
     border-left:1px solid rgb(54, 54, 54) ;
     position: relative;
     right: 10px;
 }
+.line2{
+    border-left:1px solid rgb(192, 5, 192);
+    position: relative;
+    right: 10px;
+}
 .margin-pleasure{
-    margin-top: 20px; 
+    margin-top: 15px; 
     margin-bottom: 5px;
-     height: 180px;
+     height: 190px;
     white-space: wrap;
        text-overflow: ellipsis;
     overflow: hidden;
+    font-size: 1rem;
 }
 .bi-plus-lg{
     color: rgb(192, 5, 192);
     margin-right: 5px;
 }
 .robe{
-    width: 60%;
+    width: 65%;
+    border-radius: 5px;
 }
 
 @media(min-width:1400px){
@@ -332,4 +363,128 @@
     .robe{
         width: 80%;
     }
+}.gown{
+   
+    border: 1px solid rgb(192, 5, 192);
+}
+.footer{
+    background-color: rgb(192, 5, 192);
+    margin-top: 70px;
+    padding: 20px 0px 10px 0px;
+}
+.glow{
+    color: white;
+    font-family: 'Space Grotesk', sans-serif ;
+}
+.Quick{
+    font-weight: bold;
+    color: white;
+    font-family: 'Space Grotesk', sans-serif ;
+    font-size: 20px;
+
+}
+.link{
+    color: white;
+    font-family: 'Space Grotesk', sans-serif ;
+    display: block;
+    padding-top: 5px;
+    text-decoration: none;
+}
+.link:hover{
+    color: white;
+    text-decoration: none;
+}
+.submit{
+    border: none;
+    margin-top: 20px;
+    height: 35px;
+    width: 70px;
+    border-radius: 5px;
+    font-size: 18px;
+    background-color:  rgb(192, 5, 192);
+    border: 1px solid white;
+    color: white;
+}
+.submit:hover{
+    background-color: white;
+    color: rgb(192, 5, 192);
+    transition: 1s;
+}
+.myform{
+    width: 80%;
+    border-bottom: 1px white solid !important;
+    background-color:  rgb(192, 5, 192);
+    border: none;
+    color: white;
+}
+.myform:focus-visible{
+    outline: none;  
+}
+.teatarea{
+    width: 80%;
+    color: white;
+    background-color:  rgb(192, 5, 192);
+    border: 1px solid white;
+}
+.teatarea::placeholder{
+    color: rgb(224, 224, 224);
+}
+.myform::placeholder{
+    color:rgb(224, 224, 224);
+}
+.teatarea:focus-visible{
+    outline: none;
+   
+}
+#one{
+    color:red;
+}
+.fb{
+    color: white !important;
+}
+.left{
+    padding-left: 13px; 
+    color: white !important ; 
+}
+@media(max-width:780px){
+    .media1{
+        display: none;
+    }
+}
+@media(min-width:780px){
+    .media2{
+        display: none;
+    }
+}
+.Copyright{
+    color: white;
+    font-family: 'Space Grotesk', sans-serif ;
+    font-size: 13px;
+    padding-top: 30px;
+}
+.SAIU{
+    color: rgb(189, 188, 188);
+
+}
+.SAIU:hover{
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+}
+.dud{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}.dud2{
+    display: flex;
+    flex-wrap: wrap;
+}
+.cross{
+    color: rgb(255, 255, 255) !important;
+}
+.logo{
+    width: 100px;
+}
+.linka , .linkb , .linkc , .linkd ,.linke{
+    color: white;
 }
